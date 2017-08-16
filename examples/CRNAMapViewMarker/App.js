@@ -1,23 +1,35 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { Component } from 'react';
+import { Dimensions, StyleSheet } from 'react-native';
+import { MapView } from 'expo';
 
-export default class App extends React.Component {
+const { width, height } = Dimensions.get('window');
+
+const coordinates = {
+  latitude: -22.0055948,
+  longitude: -47.8933842,
+  latitudeDelta: 0.0922,
+  longitudeDelta: 0.0421,
+};
+
+class App extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
-      </View>
+      <MapView style={styles.map} initialRegion={coordinates}>
+        <MapView.Marker
+          coordinate={coordinates}
+          title="SEMCOMP 20"
+          description="ICMC USP - São Carlos"
+        />
+      </MapView>
     );
   }
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+  map: {
+    width,
+    height,
   },
 });
+
+export default App;
