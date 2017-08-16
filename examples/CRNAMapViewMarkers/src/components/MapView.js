@@ -4,7 +4,7 @@ import { MapView } from 'expo';
 
 const { width, height } = Dimensions.get('window');
 
-const coordinates = {
+const initialRegion = {
   latitude: -22.0055948,
   longitude: -47.8933842,
   latitudeDelta: 0.0922,
@@ -14,8 +14,8 @@ const coordinates = {
 class App extends Component {
   render() {
     return (
-      <MapView style={styles.map} initialRegion={coordinates}>
-        {this.props.chieldren}
+      <MapView style={styles.map} initialRegion={initialRegion}>
+        {this.props.childrens}
       </MapView>
     );
   }

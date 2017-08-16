@@ -5,7 +5,7 @@ const markers = [
   {
     title: 'SEMCOMP 20',
     description: 'ICMC USP - São Carlos',
-    cordinates: {
+    coordinates: {
       latitude: -22.0055948,
       longitude: -47.8933842,
       latitudeDelta: 0.0922,
@@ -15,8 +15,8 @@ const markers = [
   {
     title: 'SEMCOMP 19',
     description: 'ICMC USP - São Carlos',
-    cordinates: {
-      latitude: -22.0052948,
+    coordinates: {
+      latitude: -22.0055948,
       longitude: -47.8933842,
       latitudeDelta: 0.0922,
       longitudeDelta: 0.0421,
@@ -25,8 +25,8 @@ const markers = [
   {
     title: 'SEMCOMP 18',
     description: 'ICMC USP - São Carlos',
-    cordinates: {
-      latitude: -22.0054948,
+    coordinates: {
+      latitude: -22.0055948,
       longitude: -47.8933842,
       latitudeDelta: 0.0922,
       longitudeDelta: 0.0421,

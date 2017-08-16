@@ -7,7 +7,7 @@ class App extends Component {
   render() {
     return (
       <MapView>
-        <MapViewMarker />
+        <MapViewMarkers />
       </MapView>
     );
   }
